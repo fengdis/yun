@@ -10,7 +10,7 @@
   
   <properties>
   		<slf4j.version>1.7.21</slf4j.version>
-		<java.version>8</java.version>
+		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
@@ -89,10 +89,10 @@
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-<dependency>
-    <groupId>com.google.guava</groupId>
-    <artifactId>guava</artifactId>
-</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
 		
 
 		<dependency>
@@ -216,25 +216,17 @@
 
 		</dependency>
 
-
-
-
-
-
-
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc7</artifactId>
 			<version>12.1.0.2</version>
-			<!-- <scope>system</scope> <systemPath>D:\mydev\lib\ojdbc7-12.1.0.2.jar</systemPath> -->
-
-
-		</dependency>
+			&lt;!&ndash; <scope>system</scope> <systemPath>D:\mydev\lib\ojdbc7-12.1.0.2.jar</systemPath> &ndash;&gt;
+		</dependency>-->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -429,16 +421,15 @@
     <finalName>yun</finalName>
     <plugins>
     	<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
-				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-					<encoding>${project.build.sourceEncoding}</encoding>
-				</configuration>
-			</plugin>
-
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.5.1</version>
+			<configuration>
+				<source>${java.version}</source>
+				<target>${java.version}</target>
+				<encoding>${project.build.sourceEncoding}</encoding>
+			</configuration>
+		</plugin>
 	</plugins>
   </build>
 </project>
