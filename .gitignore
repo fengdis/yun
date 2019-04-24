@@ -1,0 +1,13 @@
+*/target
+/.idea
+*.class
+target/
+.project
+.settings/
+.classpath
+/logs
+*.log
+
+# Intellij
+*.iml
+*/*.iml
